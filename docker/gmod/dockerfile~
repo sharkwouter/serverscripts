@@ -1,0 +1,4 @@
+# Generates a docker container for a gmod server
+FROM johnv/steamcmd
+MAINTAINER Wouter Wijsman <wwijsman@live.nl>
+RUN ./steamcmd.sh +login anonymous +app_update 232370 +quit
